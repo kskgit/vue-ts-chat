@@ -1,0 +1,11 @@
+{
+  "rules": {
+    // デフォルトの読み書きはすべて拒否
+    ".read": false,
+    ".write": false,
+    "message": {
+      ".read": "auth != null", // 読み込みは認証が必要
+      ".write": "auth != null" // 書き込みは認証が必要
+    }
+  }
+}
